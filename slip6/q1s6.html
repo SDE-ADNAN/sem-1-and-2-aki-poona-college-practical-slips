@@ -1,0 +1,25 @@
+<html>  
+<head>  
+<title> JavaScript Image Map </title>  
+<script>  
+function show(name) {  
+document.my.res.value = name;  
+}  
+</script>  
+</head>  
+  
+<body style = "text-align: center;">  
+<h2> It is an example of JavaScript's Image map </h2>  
+<form name = "my">  
+<input type = "text" name = "res" size = "25px" style = "font-size: 25px; text-align: center; border: 2px solid blue; background-color: pink;"/>  
+</form>  
+<br>  
+<img src = "jtp.png" border = "5" usemap = "#names" height = "300px"/>  
+  
+<map name = "names">  
+<area shape = "rect" coords = "0, 0, 325, 90" href = "#" onclick = "show('Rectangular Shape')" />  
+  
+<area shape = "circle" coords = "150, 140, 60" href = "#" onclick = "show('Circular Shape')" />  
+</map>  
+</body>  
+</html>  

@@ -1,0 +1,15 @@
+<HTML>
+    <HEAD><TITLE>Nested Frames</TITLE>
+    </HEAD>
+    <FRAMESET ROWS="20%, *">
+       <FRAME SRC="topframe.html" NAME="top" >
+       <FRAMESET COLS="50%, *">
+           <FRAME SRC="leftbot.html" NAME="left_bot" >
+              <FRAME SRC="rightbot.html" NAME="right_bot" > 
+       </FRAMESET>
+    </FRAMESET>
+    <!-- Displayed in browsers whih do not support frames -->
+    <NOFRAMES>
+    There is no frame support on your browser.
+    </NOFRAMES>
+    </HTML>
